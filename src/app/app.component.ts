@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directivesChallenge';
+  isAdmin: boolean = false;
+
+  toggleAdmin() {
+    if(this.isAdmin){
+      this.isAdmin = false;
+    } else {
+      this.isAdmin = true;
+    }
+  }
 }
